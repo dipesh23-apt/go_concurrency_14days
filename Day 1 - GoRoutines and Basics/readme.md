@@ -27,3 +27,23 @@ If the context is your computer, the tasks are considered concurrent if they don
 
 ### Example:
 Imagine you and a friend are both doing simple calculations on your own computers. Each of you is running a "calculator process." The calculations don’t affect each other because you’re using separate machines (contexts). Even though your programs might be running at the same time, they are concurrent because they are isolated from each other, not parallel in the strict sense of using multiple processors
+
+### Difference between Concurrency and Parallelism
+✅ **In Simple Words**:
+Concurrency is like multitasking. You're doing multiple things, but not necessarily at the same time. You switch between them quickly.
+
+Parallelism is like doing multiple things exactly at the same time, but it needs multiple processors or CPU cores.
+
+✅ **Analogy**:
+Imagine a single chef:
+
+Concurrency: The chef switches between making soup and baking a cake. One pot is boiling, while he preps the cake — switching tasks.
+
+Parallelism: Two chefs each work on one task at the same time.
+
+✅ **In Technical Terms**:
+Concurrency means managing **multiple tasks at once**, using **context switching**, usually on a single CPU core.
+
+Parallelism means executing **multiple tasks simultaneously** using multiple CPU cores or threads.
+
+Go gives you concurrency using Goroutines, and the Go runtime schedules them efficiently across available CPUs.
