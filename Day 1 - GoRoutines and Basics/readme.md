@@ -47,3 +47,5 @@ Concurrency means managing **multiple tasks at once**, using **context switching
 Parallelism means executing **multiple tasks simultaneously** using multiple CPU cores or threads.
 
 Go gives you concurrency using Goroutines, and the Go runtime schedules them efficiently across available CPUs.
+
+[Next Chapter- How Go Routines Work Internally](working.md)
